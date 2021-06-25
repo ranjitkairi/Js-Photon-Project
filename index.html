@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Photon | Project</title>
+  </head>
+  <body>
+    <header>
+      <h2>
+        <a id="logo" href="./index.html">
+          <i class="fas fa-images"></i>&rarr;Photon</a
+        >
+      </h2>
+      <form class="search-form">
+        <input
+          type="text"
+          name="search"
+          class="search-input"
+          placeholder="Search..."
+          required
+        />
+        <button type="submit" class="submit-btn">
+          <i class="fas fa-search" aria-hidden="true"></i>
+        </button>
+      </form>
+      <div class="filter-panel">
+        <select name="count" id="count">
+          <option value="3">3</option>
+          <option value="6">6</option>
+          <option value="9">9</option>
+          <option value="12">12</option>
+        </select>
+      </div>
+    </header>
+    <main>
+      <div class="gallery"></div>
+    </main>
+    <div class="nav-button">
+      <button class="more">More</button>
+    </div>
+
+    <div class="filter-container">
+      <div class="filter-popup">
+        <h4>Hide filter</h4>
+        <button class="close-filter">X</button>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
